@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04930E53250BC1980013DD68 /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04930E52250BC1980013DD68 /* agconnect-services.plist */; };
 		04D01A67250913390097F210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A66250913390097F210 /* AppDelegate.swift */; };
 		04D01A69250913390097F210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A68250913390097F210 /* SceneDelegate.swift */; };
 		04D01A6B250913390097F210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A6A250913390097F210 /* ViewController.swift */; };
 		04D01A6E250913390097F210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D01A6C250913390097F210 /* Main.storyboard */; };
 		04D01A702509133B0097F210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D01A6F2509133B0097F210 /* Assets.xcassets */; };
 		04D01A732509133B0097F210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D01A712509133B0097F210 /* LaunchScreen.storyboard */; };
+		59AE5F13E9FE32DD7346148D /* Pods_HMSAnalyticsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6935964A7908F088BE9722 /* Pods_HMSAnalyticsKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04930E52250BC1980013DD68 /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
 		04D01A63250913390097F210 /* HMSAnalyticsKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMSAnalyticsKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D01A66250913390097F210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D01A68250913390097F210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		04D01A6F2509133B0097F210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D01A722509133B0097F210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D01A742509133B0097F210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25AFBB9CD2CBF38A07A35DC7 /* Pods-HMSAnalyticsKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMSAnalyticsKit.release.xcconfig"; path = "Target Support Files/Pods-HMSAnalyticsKit/Pods-HMSAnalyticsKit.release.xcconfig"; sourceTree = "<group>"; };
+		301B07845D4B43A2094F39A1 /* Pods-HMSAnalyticsKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMSAnalyticsKit.debug.xcconfig"; path = "Target Support Files/Pods-HMSAnalyticsKit/Pods-HMSAnalyticsKit.debug.xcconfig"; sourceTree = "<group>"; };
+		FD6935964A7908F088BE9722 /* Pods_HMSAnalyticsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMSAnalyticsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AE5F13E9FE32DD7346148D /* Pods_HMSAnalyticsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				04D01A65250913390097F210 /* HMSAnalyticsKit */,
 				04D01A64250913390097F210 /* Products */,
+				3C4D244EE9197B9E25BEDA7C /* Pods */,
+				197E7338F0C7F698DD3714AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				04D01A6F2509133B0097F210 /* Assets.xcassets */,
 				04D01A712509133B0097F210 /* LaunchScreen.storyboard */,
 				04D01A742509133B0097F210 /* Info.plist */,
+				04930E52250BC1980013DD68 /* agconnect-services.plist */,
 			);
 			path = HMSAnalyticsKit;
+			sourceTree = "<group>";
+		};
+		197E7338F0C7F698DD3714AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD6935964A7908F088BE9722 /* Pods_HMSAnalyticsKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C4D244EE9197B9E25BEDA7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				301B07845D4B43A2094F39A1 /* Pods-HMSAnalyticsKit.debug.xcconfig */,
+				25AFBB9CD2CBF38A07A35DC7 /* Pods-HMSAnalyticsKit.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D01A772509133B0097F210 /* Build configuration list for PBXNativeTarget "HMSAnalyticsKit" */;
 			buildPhases = (
+				DF7EF867397E5A8062031A5B /* [CP] Check Pods Manifest.lock */,
 				04D01A5F250913390097F210 /* Sources */,
 				04D01A60250913390097F210 /* Frameworks */,
 				04D01A61250913390097F210 /* Resources */,
+				401AA2CAA4A4B3E5E5BED6CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D01A732509133B0097F210 /* LaunchScreen.storyboard in Resources */,
+				04930E53250BC1980013DD68 /* agconnect-services.plist in Resources */,
 				04D01A702509133B0097F210 /* Assets.xcassets in Resources */,
 				04D01A6E250913390097F210 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		401AA2CAA4A4B3E5E5BED6CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSAnalyticsKit/Pods-HMSAnalyticsKit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HMSAnalyticsKit/Pods-HMSAnalyticsKit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HMSAnalyticsKit/Pods-HMSAnalyticsKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7EF867397E5A8062031A5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HMSAnalyticsKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04D01A5F250913390097F210 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		04D01A782509133B0097F210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301B07845D4B43A2094F39A1 /* Pods-HMSAnalyticsKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		04D01A792509133B0097F210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25AFBB9CD2CBF38A07A35DC7 /* Pods-HMSAnalyticsKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

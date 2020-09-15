@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HiAnalytics
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func reportEventButton(_ sender: UIButton) {
+        HiAnalytics.onEvent("TestEvent", setParams: ["Q1": "A1", "Q2": "A2"])
+    }
+    
 }
 
