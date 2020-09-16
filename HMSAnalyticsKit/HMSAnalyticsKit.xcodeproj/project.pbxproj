@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04930E53250BC1980013DD68 /* agconnect-services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04930E52250BC1980013DD68 /* agconnect-services.plist */; };
+		04A3A3B92511F70D005C92AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3A3B82511F70D005C92AC /* SettingsViewController.swift */; };
 		04D01A67250913390097F210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A66250913390097F210 /* AppDelegate.swift */; };
 		04D01A69250913390097F210 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A68250913390097F210 /* SceneDelegate.swift */; };
 		04D01A6B250913390097F210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D01A6A250913390097F210 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		04930E52250BC1980013DD68 /* agconnect-services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "agconnect-services.plist"; sourceTree = "<group>"; };
+		04A3A3B82511F70D005C92AC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		04D01A63250913390097F210 /* HMSAnalyticsKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMSAnalyticsKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D01A66250913390097F210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D01A68250913390097F210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				04D01A66250913390097F210 /* AppDelegate.swift */,
 				04D01A68250913390097F210 /* SceneDelegate.swift */,
 				04D01A6A250913390097F210 /* ViewController.swift */,
+				04A3A3B82511F70D005C92AC /* SettingsViewController.swift */,
 				04D01A6C250913390097F210 /* Main.storyboard */,
 				04D01A6F2509133B0097F210 /* Assets.xcassets */,
 				04D01A712509133B0097F210 /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 				04D01A6B250913390097F210 /* ViewController.swift in Sources */,
 				04D01A67250913390097F210 /* AppDelegate.swift in Sources */,
 				04D01A69250913390097F210 /* SceneDelegate.swift in Sources */,
+				04A3A3B92511F70D005C92AC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

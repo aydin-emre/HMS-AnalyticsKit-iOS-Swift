@@ -16,10 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-a0-fcY">
-                                <rect key="frame" x="162.5" y="433" width="89" height="30"/>
-                                <state key="normal" title="Report Event"/>
+                                <rect key="frame" x="130.5" y="430" width="153" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Report Test Event"/>
                                 <connections>
                                     <action selector="reportEventButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxb-DF-7qA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9H-Zd-spL">
+                                <rect key="frame" x="171" y="489" width="72" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="XOO-yn-hRS" kind="show" id="0zH-vy-2fd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -27,6 +36,8 @@
                         <constraints>
                             <constraint firstItem="aIi-a0-fcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DGw-yq-eEN"/>
                             <constraint firstItem="aIi-a0-fcY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W7d-NE-JeK"/>
+                            <constraint firstItem="d9H-Zd-spL" firstAttribute="top" secondItem="aIi-a0-fcY" secondAttribute="bottom" constant="23" id="Yg3-lp-PO9"/>
+                            <constraint firstItem="d9H-Zd-spL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bNg-uW-s86"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -34,6 +45,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-49" y="102"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="EZN-zy-rdq">
+            <objects>
+                <viewController id="XOO-yn-hRS" customClass="SettingsViewController" customModule="HMSAnalyticsKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfj-h5-Jsu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="JE4-EJ-jw0">
+                                <rect key="frame" x="57" y="63" width="300" height="207"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Gender:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awn-Dq-x48">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Age:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8EM-wZ-B0z">
+                                        <rect key="frame" x="0.0" y="57" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Sport:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPE-8Y-D19">
+                                        <rect key="frame" x="0.0" y="114" width="300" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="SFH-OL-ZQn">
+                                        <rect key="frame" x="0.0" y="171" width="300" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t86-la-6bB">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.64705882349999999" green="0.094117647060000004" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="XOO-yn-hRS" eventType="touchUpInside" id="6xn-FX-HPH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r70-Cw-8Fq">
+                                                <rect key="frame" x="161.5" y="0.0" width="138.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Submit"/>
+                                                <connections>
+                                                    <action selector="submitButton:" destination="XOO-yn-hRS" eventType="touchUpInside" id="6eO-fz-W5Y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ssf-88-cWQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JE4-EJ-jw0" firstAttribute="centerX" secondItem="Tfj-h5-Jsu" secondAttribute="centerX" id="qmt-a4-QN1"/>
+                            <constraint firstItem="JE4-EJ-jw0" firstAttribute="top" secondItem="6rM-uu-cdZ" secondAttribute="top" constant="63" id="uyx-cA-sLd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6rM-uu-cdZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J7t-sA-ng8"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="8EM-wZ-B0z" id="RAc-rP-hlz"/>
+                        <outlet property="favoriteSportTextField" destination="bPE-8Y-D19" id="oMr-eK-7CB"/>
+                        <outlet property="genderTextField" destination="awn-Dq-x48" id="PQF-hs-m0w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouT-4o-WXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="101.78571428571428"/>
         </scene>
     </scenes>
 </document>
