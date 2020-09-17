@@ -12,4 +12,5 @@ Analytics Kit implements the following functions using data collected from apps:
   <li>Supports automatic event collection and session calculation as well as predefined event IDs and parameters.</li>
 </ul>
 
-
+![HMSAnalyticsKit example](https://i.ibb.co/zVcp8vN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-46.png)
+![HMSAnalyticsKit example](https://i.ibb.co/FJ8ycSC/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-51.png)
