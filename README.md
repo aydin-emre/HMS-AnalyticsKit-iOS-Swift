@@ -15,10 +15,10 @@ Analytics Kit implements the following functions using data collected from apps:
 <table>
   <tr>
     <td>
-      ![HMSAnalyticsKit example](https://i.ibb.co/zVcp8vN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-46.png)
+      <img src="https://i.ibb.co/zVcp8vN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-46.png">
     </td>
     <td>
-      ![HMSAnalyticsKit example](https://i.ibb.co/FJ8ycSC/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-51.png)
+      <img src="https://i.ibb.co/FJ8ycSC/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-09-16-at-13-45-51.png">
     </td>
   </tr>
 </table>
