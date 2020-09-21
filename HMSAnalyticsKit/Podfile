@@ -6,7 +6,6 @@ target 'HMSAnalyticsKit' do
   use_frameworks!
 
   # Pods for HMSAnalyticsKit
-  pod 'AGConnectCore'
   pod 'HiAnalytics'
 
 end
